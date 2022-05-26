@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void changeColor(int id, TextView v) {
         if (id == R.id.fav) {
-            if (isFav == false) {
+            if (!isFav) {
                 v.setTextColor(0xFFFF0000);
                 isFav = true;
             } else if (isFav) {
